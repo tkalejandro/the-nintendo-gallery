@@ -21,9 +21,7 @@ body {
 }
 
 .gallery a {
-    width: 14.6%;
-    padding-bottom: 14.6%;
-    margin: 1%;
+    
     background-image: url("https://i.etsystatic.com/8293813/r/il/3012f0/1882591130/il_570xN.1882591130_lids.jpg");
     /* This is important for all a */
     background-size: cover;
