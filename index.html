@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>The Nintendo Gallery</title>
+    <meta name="description" content="A Nintendo Gallery Generator! All images belong to their respective authors.">
+</head>
+<body>
+    
+    <section class="intro">
+        <h1>The Nintendo Gallery</h1>
+        <p>Create your own! template! Select the franchise you like!</p>
+    </section>
+    <section class="settings">
+        <h2>Gallery Settings</h2>
+        <label for="numberGallery">How many images?</label>
+        <input type="number" id="numberGallery" value="0">
+        <label for="numberCol">How many columns</label>
+        <select name="numberCol" id="numberCol">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+        </select>
+        <h3>Select franchise</h3>
+        <label for="metroid">Metroid</label>
+        <input type="checkbox" id="metroid" checked>
+        <label for="pokemon">Pokemon</label>
+        <input type="checkbox" id="pokemon" checked>
+    </section>
+    <section class="gallery"></section>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
