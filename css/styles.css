@@ -21,7 +21,7 @@ body {
 }
 
 .gallery a {
-    
+    /* In case an image is broken this will be the replacement*/
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/72a319113606963.602b97b532122.jpg");
     /* This is important for all a */
     background-size: cover;

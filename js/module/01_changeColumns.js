@@ -1,10 +1,12 @@
-import { allImages, numberColumns } from "./00_variables.js";
+import { numberColumns } from "./00_variables.js";
 
 
 
 
 
 export const changeColumns = () => {
+    //We need to recognize all A that were created.
+    const allImages = document.querySelectorAll("a")
     let currentSelect = numberColumns.value
 
     allImages.forEach(image => {
