@@ -9,14 +9,34 @@ body {
     grid-template-areas: "intro"
                         "settings"
                         "gallery";
+
+    background-color: #0A0A0A;
 }
+.intro, .settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+h1 {
+    color: yellow;
+    
+}
+.settings {
+    color: white;
+}
+
+
+
+
 
 .gallery {
     
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     
 }
 
@@ -26,6 +46,33 @@ body {
     /* This is important for all a */
     background-size: cover;
     background-position: center;
+    box-shadow: 2px 2px 0px yellow, -2px -2px 0px darkred;
+}
+/*
+.gallery a:nth-of-type(2n) {
+    transform: translate(0, 50px);
+}
+*/
+
+@media (min-width: 768px) {
+    .gallery a {
+        box-shadow: 5px 5px 0px yellow, -5px -5px 0px darkred;
+    }
+}
+@media (min-width: 1024px) {
+    .gallery a {
+        box-shadow: 6px 6px 0px yellow, -6px -6px 0px darkred;
+    }
+}
+@media (min-width: 1280px) {
+    .gallery a {
+        box-shadow: 7px 7px 0px yellow, -7px -7px 0px darkred;
+    }
+}
+@media (min-width: 1440px) {
+    .gallery a {
+        box-shadow: 8px 8px 0px yellow, -8px -8px 0px darkred;
+    }
 }
 .gallery-col-1 {
     width: 100%;
