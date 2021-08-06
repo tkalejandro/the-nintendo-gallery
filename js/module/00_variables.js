@@ -4,3 +4,4 @@ export const numberGallery = document.querySelector("#numberGallery")
 
 export const metroid = document.querySelector("#metroid")
 export const pokemon = document.querySelector("#pokemon")
+export const zelda = document.querySelector("#zelda")

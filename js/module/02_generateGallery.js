@@ -1,6 +1,7 @@
 import { metroidImages } from "./00_01_metroidImages.js";
 import { pokemonImages } from "./00_02_pokemonImages.js";
-import { galleryContainer, metroid, pokemon, numberColumns} from "./00_variables.js";
+import { legendOfZeldaImages } from "./00_03_legendOfZelda.js";
+import { galleryContainer, metroid, pokemon, zelda, numberColumns} from "./00_variables.js";
 import { columnClassDefaultGenerator } from "./03_columnClassDefaultGenerator.js";
 
 //IM STUCK HERE!!! I CANT MANAGE TO REMOVE THE IMAGES PROPERLY
@@ -14,14 +15,15 @@ export const generateGallery = () => {
     galleryContainer.innerHTML = ``
 
     //Lets create condition of what images to include in our final array!
-    metroid.checked
-        //? metroidImages.forEach(element => allImages.push(element))
+    metroid.checked   
         ? allImages = allImages.concat(metroidImages)
         : allImages = allImages.filter(element => element.franchise != "metroid")
     pokemon.checked
-        //? pokemonImages.forEach(element => allImages.push(element))
         ? allImages = allImages.concat(pokemonImages)
         : allImages = allImages.filter(element => element.franchise != "pokemon")
+    zelda.checked
+        ? allImages = allImages.concat(legendOfZeldaImages)
+        : allImages = allImages.filter(element => element.franchise != "zelda")
 
 
 
