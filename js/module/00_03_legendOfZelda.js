@@ -58,6 +58,6 @@ const legendOfZelda = [
         imageURL: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/18c81069707049.5b8aa938f41b9.jpg",
         referenceURL = "https://www.behance.net/gallery/69707049/the-LEGEND-of-ZELDA",
         franchise: "zelda"
-    },
+    }
     
 ]
