@@ -1,17 +1,16 @@
 import { metroidImages } from "./00_01_metroidImages.js";
 import { pokemonImages } from "./00_02_pokemonImages.js";
-import { galleryContainer, metroid, pokemon } from "./00_variables.js";
-
-
-
-
-
+import { galleryContainer, metroid, pokemon, numberColumns} from "./00_variables.js";
+import { columnClassDefaultGenerator } from "./03_columnClassDefaultGenerator.js";
 
 //IM STUCK HERE!!! I CANT MANAGE TO REMOVE THE IMAGES PROPERLY
 export const generateGallery = () => {
+
     //Empty Array to start! 
     let allImages = []
+
     //I DONT LIKE THIS
+    //Lets reset the HTML inside the gallery Container
     galleryContainer.innerHTML = ``
 
     //Lets create condition of what images to include in our final array!
@@ -23,11 +22,10 @@ export const generateGallery = () => {
         //? pokemonImages.forEach(element => allImages.push(element))
         ? allImages = allImages.concat(pokemonImages)
         : allImages = allImages.filter(element => element.franchise != "pokemon")
-    //Lets unify all the arrays in one
-    console.log(allImages)
 
 
 
+    //Lets print now!
     for (let i = 0; i < allImages.length; i++) {
         //Lets create the A tag 
         const newImage = document.createElement("a")
@@ -39,8 +37,19 @@ export const generateGallery = () => {
         //Lets Assign the Author
         //-----------
         newImage.title = `Author: ${allImages[i].author}`
-        //Lets Assign the default class which is col-3
-        newImage.classList.add("gallery-col-3")
+        //Lets Assign the default class depending of how many cols value
+        numberColumns.value == 1
+            ? newImage.classList.add("gallery-col-1")
+            : numberColumns.value == 2
+                ? newImage.classList.add("gallery-col-2")
+                : numberColumns.value == 3
+                    ? newImage.classList.add("gallery-col-3")
+                    : numberColumns.value == 4
+                        ? newImage.classList.add("gallery-col-4")
+                        : numberColumns.value == 5
+                            ? newImage.classList.add("gallery-col-5")
+                            : newImage.classList.add("gallery-col-6")
+                            
         //Lets push it to the web now!
         galleryContainer.appendChild(newImage)
 
