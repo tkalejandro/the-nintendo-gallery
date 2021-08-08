@@ -4,11 +4,14 @@ import { legendOfZeldaImages } from "./00_03_legendOfZelda.js";
 import { galleryContainer, metroid, pokemon, zelda, numberColumns, introContainer, settingsContainer} from "./00_variables.js";
 import { columnClassDefaultGenerator } from "./03_columnClassDefaultGenerator.js";
 
+let counter = 1
 
 export const generateGallery = () => {
     //Lets remove the classes 50vhClasses
-    introContainer.classList.remove("vh-50")
-    settingsContainer.classList.remove("vh-50")
+    counter == 1 ? (introContainer.classList.remove("vh-50"),settingsContainer.classList.remove("vh-50"), counter--) : counter
+    
+    
+    
     //Empty Array to start! 
     let allImages = []
 
