@@ -1,12 +1,14 @@
 import { metroidImages } from "./00_01_metroidImages.js";
 import { pokemonImages } from "./00_02_pokemonImages.js";
 import { legendOfZeldaImages } from "./00_03_legendOfZelda.js";
-import { galleryContainer, metroid, pokemon, zelda, numberColumns} from "./00_variables.js";
+import { galleryContainer, metroid, pokemon, zelda, numberColumns, introContainer, settingsContainer} from "./00_variables.js";
 import { columnClassDefaultGenerator } from "./03_columnClassDefaultGenerator.js";
 
 
 export const generateGallery = () => {
-
+    //Lets remove the classes 50vhClasses
+    introContainer.classList.remove("vh-50")
+    settingsContainer.classList.remove("vh-50")
     //Empty Array to start! 
     let allImages = []
 
