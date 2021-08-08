@@ -4,7 +4,7 @@ import { legendOfZeldaImages } from "./00_03_legendOfZelda.js";
 import { galleryContainer, metroid, pokemon, zelda, numberColumns} from "./00_variables.js";
 import { columnClassDefaultGenerator } from "./03_columnClassDefaultGenerator.js";
 
-//IM STUCK HERE!!! I CANT MANAGE TO REMOVE THE IMAGES PROPERLY
+
 export const generateGallery = () => {
 
     //Empty Array to start! 
@@ -25,20 +25,31 @@ export const generateGallery = () => {
         ? allImages = allImages.concat(legendOfZeldaImages)
         : allImages = allImages.filter(element => element.franchise != "zelda")
 
+    //Lets Randomnize the array order
 
+    let randomAllImages = []
+
+    while(allImages.length != 0) {
+        //Random number
+        let randomNumber = Math.floor(Math.random() * allImages.length)
+        //Lets assign the index of the array
+        randomAllImages.push(allImages[randomNumber])
+        //Lets delete this item we select!
+        allImages.splice(randomNumber, 1)
+    }
 
     //Lets print now!
-    for (let i = 0; i < allImages.length; i++) {
+    for (let i = 0; i < randomAllImages.length; i++) {
         //Lets create the A tag 
         const newImage = document.createElement("a")
         //Lets Assign the image Background
-        newImage.style.backgroundImage = `url(${allImages[i].imageURL})`
+        newImage.style.backgroundImage = `url(${randomAllImages[i].imageURL})`
         //Lets Assign the image reference
-        newImage.href = allImages[i].referenceURL
+        newImage.href = randomAllImages[i].referenceURL
         newImage.target = "_blank"
         //Lets Assign the Author
         //-----------
-        newImage.title = `Author: ${allImages[i].author}`
+        newImage.title = `Author: ${randomAllImages[i].author}`
         //Lets Assign the default class depending of how many cols value
         numberColumns.value == 1
             ? newImage.classList.add("gallery-col-1")
