@@ -3,6 +3,9 @@ import { pokemonImages } from "./00_02_pokemonImages.js";
 import { legendOfZeldaImages } from "./00_03_legendOfZelda.js";
 import { metroid, pokemon, zelda } from "./00_variables.js";
 
+
+export let totalImagesNumber = pokemonImages.length + metroid.length +  zelda.length;
+
 export const isGameChecked = () => {
     let newArray = []
     metroid.checked
