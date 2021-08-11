@@ -14,6 +14,6 @@ export const isGameChecked = () => {
     zelda.checked
         ? newArray = newArray.concat(legendOfZeldaImages)
         : newArray = newArray.filter(element => element.franchise != "zelda")
-    console.log(newArray)
+    
     return newArray
 } 
