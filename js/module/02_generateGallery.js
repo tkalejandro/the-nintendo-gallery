@@ -1,6 +1,6 @@
-import { galleryContainer, introContainer, metroid, numberGallery, pokemon, settingsContainer, zelda } from "./00_variables.js";
+import { galleryContainer, introContainer, settingsContainer } from "./00_variables.js";
 import { randomTheImages } from "./04_randomTheImages.js"
-import { isGameChecked, totalImagesNumber } from "./05_isGameChecked.js";
+import { isGameChecked} from "./05_isGameChecked.js";
 import { galleryHTMLFormat } from "./06_galleryHTMLFormat.js";
 import {howManyImagesToShow} from "./07_howManyImagesToShow.js"
 let counter = 1
