@@ -20,10 +20,11 @@ export const generateGallery = () => {
     //Lets Random the array order
     let randomAllImages = randomTheImages(allImages)
 
-    //How many images to show?
-    //randomAllImages = howManyImagesToShow(randomAllImages)
-
+    //How many images to show
+    let trimArray = howManyImagesToShow(randomAllImages)
+    
+    
     //Lets print now to the web!
-    galleryHTMLFormat(randomAllImages)
+    galleryHTMLFormat(trimArray)
 
 }

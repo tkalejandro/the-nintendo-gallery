@@ -1,6 +1,7 @@
 import { numberColumns } from "./00_variables.js"
 
-//I NEED TO ASK WHY THIS IS NOT WORKING PROPERLY
+//This function here is just for the default  class when we are generating the image
+//Dont confuse with changeColumns , because that one target images that are already existing.
 export const columnClassDefaultGenerator = (image) => {
     numberColumns.value == 1
             ? image.classList.add("gallery-col-1")
