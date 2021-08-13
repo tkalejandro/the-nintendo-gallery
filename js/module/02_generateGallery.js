@@ -2,7 +2,7 @@ import { galleryContainer, introContainer, settingsContainer } from "./00_variab
 import { randomTheImages } from "./04_randomTheImages.js"
 import { isGameChecked} from "./05_isGameChecked.js";
 import { galleryHTMLFormat } from "./06_galleryHTMLFormat.js";
-import {howManyImagesToShow} from "./07_howManyImagesToShow.js"
+
 let counter = 1
 
 
@@ -19,12 +19,9 @@ export const generateGallery = () => {
 
     //Lets Random the array order
     let randomAllImages = randomTheImages(allImages)
-
-    //How many images to show
-    let trimArray = howManyImagesToShow(randomAllImages)
     
     
     //Lets print now to the web!
-    galleryHTMLFormat(trimArray)
+    galleryHTMLFormat(randomAllImages)
 
 }
