@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9481b5254.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>The Nintendo Gallery</title>
     <meta name="description" content="A Nintendo Gallery Generator! All images belong to their respective authors.">
@@ -12,31 +13,36 @@
 
 <body>
 
-    <section class="intro vh-50" id="intro">
+    <section class="intro vh-100" id="intro">
         <h1>The Nintendo Gallery</h1>
+        <button class="startBtn" id="startBtn">Start Gallery</button>
     </section>
-    <section class="settings vh-50" id="settings">
+    <section class="settings" id="settings">
         <h2>Gallery Settings</h2>
-        <label for="numberGallery">How many images?</label>
-        <input type="number" id="numberGallery">
-        <label for="numberCol">How many columns</label>
-        <select name="numberCol" id="numberCol">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3" selected>3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-        <h3>Select franchise</h3>
-        <div>
-            <label for="metroid">Metroid</label>
-            <input type="checkbox" id="metroid">
-            <label for="pokemon">Pokemon</label>
-            <input type="checkbox" id="pokemon">
-            <label for="zelda">Legend of Zelda</label>
-            <input type="checkbox" id="zelda">
+        <button class="fas fa-cog" id="settingsBtn"></button>
+        <div class="settings-container d-none">
+            <label for="numberGallery">How many images?</label>
+            <input type="number" id="numberGallery">
+            <label for="numberCol">How many columns</label>
+            <select name="numberCol" id="numberCol">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <h3>Select franchise</h3>
+            <div>
+                <label for="metroid">Metroid</label>
+                <input type="checkbox" id="metroid" checked>
+                <label for="pokemon">Pokemon</label>
+                <input type="checkbox" id="pokemon" checked>
+                <label for="zelda">Legend of Zelda</label>
+                <input type="checkbox" id="zelda" checked>
+            </div>
         </div>
+
     </section>
     <section class="gallery">
         <!-- <a href="https://i.etsystatic.com/8293813/r/il/3012f0/1882591130/il_570xN.1882591130_lids.jpg"></a> -->
