@@ -1,4 +1,4 @@
-import { galleryContainer, introContainer, startBtn } from "./00_variables.js";
+import { galleryContainer, introContainer, numberGallery, startBtn } from "./00_variables.js";
 import { randomTheImages } from "./04_randomTheImages.js"
 import { isGameChecked} from "./05_isGameChecked.js";
 import { galleryHTMLFormat } from "./06_galleryHTMLFormat.js";
@@ -19,7 +19,9 @@ export const generateGallery = () => {
 
     //Lets Random the array order
     let randomAllImages = randomTheImages(allImages)
-    
+
+    //*THIS VALUE IS TEMPORARY HERE
+    numberGallery.value = randomAllImages.length
     //Lets print now to the web!
     galleryHTMLFormat(randomAllImages)
 

@@ -19,28 +19,39 @@
     </section>
     <section class="settings" id="settings">
         <h2 class="d-none">Gallery Settings</h2>
-        <button class="fas fa-cog" id="settingsBtn"></button>
+        <button class="fas fa-cog settingsBtn" id="settingsBtn"></button>
         <div class="settings-container d-none">
-            <label for="numberGallery">How many images?</label>
-            <input type="number" id="numberGallery">
-            <label for="numberCol">How many columns</label>
-            <select name="numberCol" id="numberCol">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3" selected>3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-            <h3>Select franchise</h3>
-            <div>
-                <label for="metroid">Metroid</label>
-                <input type="checkbox" id="metroid" checked>
-                <label for="pokemon">Pokemon</label>
-                <input type="checkbox" id="pokemon" checked>
-                <label for="zelda">Legend of Zelda</label>
-                <input type="checkbox" id="zelda" checked>
+            <div class="numberGallery-container">
+                <label for="numberGallery">Images</label>
+                <input type="number" id="numberGallery">
             </div>
+
+            <div class="columns-container">
+
+                <label for="numberCol">Columns</label>
+                <select name="numberCol" id="numberCol">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="selectFranchise-container">
+                <button class="fas fa-gamepad franchiseBtn" id="franchiseBtn"></button>
+                <h3 class="d-none">Select franchise</h3>
+                <div class="d-none">
+                    <label for="metroid">Metroid</label>
+                    <input type="checkbox" id="metroid" checked>
+                    <label for="pokemon">Pokemon</label>
+                    <input type="checkbox" id="pokemon" checked>
+                    <label for="zelda">Legend of Zelda</label>
+                    <input type="checkbox" id="zelda" checked>
+                </div>
+            </div>
+
         </div>
 
     </section>
