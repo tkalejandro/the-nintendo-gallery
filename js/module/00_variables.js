@@ -19,6 +19,7 @@ export const franchiseCheckbox = document.querySelector(".franchiseCheckbox")
 export const metroid = document.querySelector("#metroid")
 export const pokemon = document.querySelector("#pokemon")
 export const zelda = document.querySelector("#zelda")
+export const allTheGames = document.querySelectorAll(`input[type="checkbox"]`)
 
 
 // *******GALLERY CONTAINER********** */
