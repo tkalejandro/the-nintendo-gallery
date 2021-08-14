@@ -1,4 +1,4 @@
-import { galleryContainer, introContainer, numberGallery, settingsBtn, settingsContainer, startBtn, allGames } from "./00_variables.js";
+import { galleryContainer, introContainer, numberGallery, settingsBtn, settingsContainer, startBtn, allGamesCheckbox } from "./00_variables.js";
 import { randomTheImages } from "./04_randomTheImages.js"
 import { isGameChecked} from "./05_isGameChecked.js";
 import { galleryHTMLFormat } from "./06_galleryHTMLFormat.js";

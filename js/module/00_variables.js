@@ -14,7 +14,7 @@ export const numberColumns = document.querySelector("#numberCol")
 export const numberGallery = document.querySelector("#numberGallery")
 export const franchiseBtn = document.querySelector("#franchiseBtn")
 //Franchise container
-export const allGames = document.querySelector("#allGames")
+export const allGamesCheckbox = document.querySelector("#allGames")
 export const franchiseCheckbox = document.querySelector(".franchiseCheckbox")
 export const metroid = document.querySelector("#metroid")
 export const pokemon = document.querySelector("#pokemon")
