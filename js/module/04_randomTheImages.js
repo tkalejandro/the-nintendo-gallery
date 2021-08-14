@@ -1,3 +1,6 @@
+//Function to mix all games inside the array, otherwise will be in order killing the versatility.
+//The page should not be showing always the shame, everyone has the same opportunity.
+
 export const randomTheImages = (arr) => {
     let randomTheImages = []
 

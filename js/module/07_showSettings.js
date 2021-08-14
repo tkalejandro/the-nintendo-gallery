@@ -7,6 +7,8 @@ export const showSettings = () => {
    
    innerSettingsContainer.classList.toggle("d-none")
    settingTitle.classList.toggle("d-none")
+
+   //Here im using the class from FontAwesome, it overwriting fa-cog.
    settingsBtn.classList.toggle("fa-times-circle")
 
    //Now we when h2 appears we need to make sure is invisible, we want to keep it just for semantic purposes
