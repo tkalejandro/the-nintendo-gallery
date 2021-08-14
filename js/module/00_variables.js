@@ -1,10 +1,10 @@
+//***********INTRO CONTAINER */
 //Intro container
 export const introContainer = document.querySelector("#intro")
 export const startBtn = document.querySelector("#startBtn")
 
 
-//****************** */
-
+//*********SETTINGS********* */
 //Settings container 
 export const settingsContainer = document.querySelector("#settings")
 export const innerSettingsContainer = document.querySelector(".settings-container")
@@ -20,7 +20,7 @@ export const metroid = document.querySelector("#metroid")
 export const pokemon = document.querySelector("#pokemon")
 export const zelda = document.querySelector("#zelda")
 
-// ***************** */
 
+// *******GALLERY CONTAINER********** */
 //Gallery container
 export const galleryContainer = document.querySelector(".gallery")
