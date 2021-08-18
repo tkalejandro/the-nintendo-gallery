@@ -51,7 +51,6 @@ body {
     
 }
 .franchiseCheckbox{
-    margin: auto;
     border: 1px solid yellow;
     background-color: rgba(50,205,50, 0.95);
     display: flex;
@@ -59,14 +58,22 @@ body {
     justify-content: center;
     align-items: center;
     width: 60%;
+    max-width: 500px;
     
     padding: 20px;
     border-radius: 25px;
 
     position: fixed;
-    top: 50%;
-    right: 18%;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
+
+.franchiseCheckbox div {
+    margin: 3px;
+}
+
 .columns-container, .numberGallery-container, .franchiseBtn {
     width: 80px;
     height: 80px;
@@ -174,41 +181,6 @@ h2 {
 }
 */
 
-@media (min-width: 768px) {
-    .gallery a {
-        box-shadow: 5px 5px 0px yellow, -5px -5px 0px darkred;
-    }
-    .gallery a:hover {
-        box-shadow: 5px 5px 0px blue, -5px -5px 0px greenyellow;
-    }
-}
-@media (min-width: 1024px) {
-    .gallery {
-        width: 80%;
-    }
-    .gallery a {
-        box-shadow: 6px 6px 0px yellow, -6px -6px 0px darkred;
-    }
-    .gallery a:hover {
-        box-shadow: 6px 6px 0px blue, -6px -6px 0px greenyellow;
-    }
-}
-@media (min-width: 1280px) {
-    .gallery a {
-        box-shadow: 7px 7px 0px yellow, -7px -7px 0px darkred;
-    }
-    .gallery a:hover {
-        box-shadow: 7px 7px 0px blue, -7px -7px 0px greenyellow;
-    }
-}
-@media (min-width: 1440px) {
-    .gallery a {
-        box-shadow: 8px 8px 0px yellow, -8px -8px 0px darkred;
-    }
-    .gallery a:hover {
-        box-shadow: 8px 8px 0px blue, -8px -8px 0px greenyellow;
-    }
-}
 .gallery-col-1 {
     width: 100%;
     padding-bottom: 100%;
@@ -244,3 +216,46 @@ h2 {
     margin: 1.3%;
 }
 
+@media  (width: 375px) {
+    .franchiseCheckbox {
+        top: 40%;
+    }
+}
+@media (min-width: 768px) {
+    .franchiseCheckbox {
+        top: 50%;
+    }
+    .gallery a {
+        box-shadow: 5px 5px 0px yellow, -5px -5px 0px darkred;
+    }
+    .gallery a:hover {
+        box-shadow: 5px 5px 0px blue, -5px -5px 0px greenyellow;
+    }
+}
+@media (min-width: 1024px) {
+    .gallery {
+        width: 80%;
+    }
+    .gallery a {
+        box-shadow: 6px 6px 0px yellow, -6px -6px 0px darkred;
+    }
+    .gallery a:hover {
+        box-shadow: 6px 6px 0px blue, -6px -6px 0px greenyellow;
+    }
+}
+@media (min-width: 1280px) {
+    .gallery a {
+        box-shadow: 7px 7px 0px yellow, -7px -7px 0px darkred;
+    }
+    .gallery a:hover {
+        box-shadow: 7px 7px 0px blue, -7px -7px 0px greenyellow;
+    }
+}
+@media (min-width: 1440px) {
+    .gallery a {
+        box-shadow: 8px 8px 0px yellow, -8px -8px 0px darkred;
+    }
+    .gallery a:hover {
+        box-shadow: 8px 8px 0px blue, -8px -8px 0px greenyellow;
+    }
+}
