@@ -1,4 +1,4 @@
-import { galleryContainer, innerSettingsContainer, settingsBtn, settingTitle } from "./00_variables.js"
+import { columnBtnContainer, columnSelectContainer, galleryContainer, innerSettingsContainer, settingsBtn, settingTitle } from "./00_variables.js"
 
 
 //toggle help to add and remove the same class, no need to create extra logic
@@ -17,5 +17,16 @@ export const showSettings = (event) => {
 
    //Now we when h2 appears we need to make sure is invisible, we want to keep it just for semantic purposes
    settingTitle.classList.toggle("v-hidden")
+
+   //Now if the options were open we need to make sure we close them, in case wasnt open, we dont do nothing.
+   //!columnBtnContainer.classList.contains("d-none") ? console.log("Im true") : showColumnSettings
+}
+
+export const showColumnSettings = (event) => {
+   //Avoid propagation!
+   event.stopPropagation()
+   
+   columnBtnContainer.classList.toggle("d-none")
+   columnSelectContainer.classList.toggle("d-none")
 }
 
