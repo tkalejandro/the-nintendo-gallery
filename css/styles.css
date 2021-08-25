@@ -140,6 +140,7 @@ body {
     color: white;
     border: 1px solid rgba(240,236,87, 0.95);
     border-radius: 5px;
+    cursor: pointer;
 }
 .startBtn{
     margin-top: 20px;
@@ -155,6 +156,11 @@ body {
     font-size: 1.2rem;
     text-align: center;
     cursor: pointer;    
+}
+.numberGalleryBtn {
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
 }
 .numberGallery-container{
     position: fixed;

@@ -1,4 +1,4 @@
-import { columnBtnContainer, columnSelectContainer, galleryContainer, innerSettingsContainer, settingsBtn, settingTitle } from "./00_variables.js"
+import { columnBtnContainer, columnSelectContainer, galleryContainer, innerSettingsContainer, numberGallery, numberGalleryBtn, settingsBtn, settingTitle } from "./00_variables.js"
 
 
 //toggle help to add and remove the same class, no need to create extra logic
@@ -28,5 +28,15 @@ export const showColumnSettings = (event) => {
    
    columnBtnContainer.classList.toggle("d-none")
    columnSelectContainer.classList.toggle("d-none")
+}
+
+export const showNumberGallerySettings = (event) => {
+   //Avoid propagation
+   event.stopPropagation()
+
+   //Now im invisible!
+   numberGalleryBtn.classList.toggle("d-none")
+   //Now im visible!
+   numberGallery.classList.toggle("d-none")
 }
 
