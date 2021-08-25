@@ -1,4 +1,4 @@
-import { columnBtnContainer, columnSelectContainer, galleryContainer, innerSettingsContainer, numberGallery, numberGalleryBtn, settingsBtn, settingTitle } from "./00_variables.js"
+import { columnBtnContainer, columnSelectContainer, franchiseBtn, franchiseCheckbox, galleryContainer, innerSettingsContainer, numberGallery, numberGalleryBtn, settingsBtn, settingTitle } from "./00_variables.js"
 
 
 //toggle help to add and remove the same class, no need to create extra logic
@@ -18,8 +18,17 @@ export const showSettings = (event) => {
    //Now we when h2 appears we need to make sure is invisible, we want to keep it just for semantic purposes
    settingTitle.classList.toggle("v-hidden")
 
-   //Now if the options were open we need to make sure we close them, in case wasnt open, we dont do nothing.
-   //!columnBtnContainer.classList.contains("d-none") ? console.log("Im true") : showColumnSettings
+   //Now we default all options to make sure everytime we close or open it goes to their initial state!.
+   //This is same to the Index HTML. Nothing special.
+   //Images Btn
+   numberGalleryBtn.className = "numberGalleryBtn far fa-images"
+   numberGallery.className = "d-none"
+   //Columns Btn
+   columnBtnContainer.className = "columnBtnContainer"
+   columnSelectContainer.className = "columnSelectContainer d-none"
+   //Franchise Btn
+   franchiseCheckbox.className = "franchiseCheckbox d-none"
+   franchiseBtn.className = "fas fa-gamepad franchiseBtn"   
 }
 
 export const showColumnSettings = (event) => {

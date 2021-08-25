@@ -220,6 +220,10 @@ h2 {
 .v-hidden {
     visibility: hidden;
 }
+.bg-white {
+    background-color: white;
+    color: rgba(118,118,118)
+}
 
 
 
