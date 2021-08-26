@@ -10,17 +10,28 @@ import {showColumnSettings} from "./module/11_showColumnSettings.js"
 
 numberColumns.addEventListener("change", changeColumns)
 
-//I MIGHT NEED TO SIMPLIFY THIS LATER
+//**********CHECKBOXES EVENT LISTENERS ************************/
 metroid.addEventListener("change" , generateGallery)
 pokemon.addEventListener("change" , generateGallery)
 zelda.addEventListener("change" , generateGallery)
 mario.addEventListener("change", generateGallery)
 allGamesCheckbox.addEventListener("change", allGamesChecked)
 
-startBtn.addEventListener("click", generateGallery)
-settingsBtn.addEventListener("click", showSettings)
-numberGallery.addEventListener("change", howManyImagesToSee)
-franchiseBtn.addEventListener("click", showGames)
-numberGalleryBtn.addEventListener("click", showNumberGallerySettings)
+//? I COULDMAKE A AllTheGames.forEach() to target all the checkboxes, but it takes to much work because the logic for "All" and for the purpose of this project is not really needed it.
+//? May be in the future! :D 
 
+//**********************************/
+
+
+//*****************BUTTONS EVENT LISTENER */
+//STARTING
+startBtn.addEventListener("click", generateGallery)
+//SETTINGS
+settingsBtn.addEventListener("click", showSettings)
+//FRANCHISE
+franchiseBtn.addEventListener("click", showGames)
+//NUMBER GALLERY
+numberGalleryBtn.addEventListener("click", showNumberGallerySettings)
+numberGallery.addEventListener("change", howManyImagesToSee)
+//COLUMNS
 columnBtnContainer.addEventListener("click", showColumnSettings)

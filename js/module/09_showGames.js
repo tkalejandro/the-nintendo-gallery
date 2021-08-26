@@ -5,4 +5,4 @@ import { franchiseBtn, franchiseCheckbox } from "./00_variables.js"
 export const showGames = () => {
     franchiseCheckbox.classList.toggle("d-none")
     franchiseBtn.classList.toggle("bg-white")
- }
+}
