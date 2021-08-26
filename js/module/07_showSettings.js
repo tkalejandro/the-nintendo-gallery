@@ -31,21 +31,7 @@ export const showSettings = (event) => {
    franchiseBtn.className = "fas fa-gamepad franchiseBtn"   
 }
 
-export const showColumnSettings = (event) => {
-   //Avoid propagation!
-   event.stopPropagation()
-   
-   columnBtnContainer.classList.toggle("d-none")
-   columnSelectContainer.classList.toggle("d-none")
-}
 
-export const showNumberGallerySettings = (event) => {
-   //Avoid propagation
-   event.stopPropagation()
 
-   //Now im invisible!
-   numberGalleryBtn.classList.toggle("d-none")
-   //Now im visible!
-   numberGallery.classList.toggle("d-none")
-}
+
 
