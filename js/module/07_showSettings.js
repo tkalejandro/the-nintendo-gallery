@@ -30,8 +30,3 @@ export const showSettings = (event) => {
    franchiseCheckbox.className = "franchiseCheckbox d-none"
    franchiseBtn.className = "fas fa-gamepad franchiseBtn"   
 }
-
-
-
-
-
